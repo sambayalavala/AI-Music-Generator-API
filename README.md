@@ -1,32 +1,64 @@
-# AI Music Generator API
+#  AI Music Generator API
 
-## Description
-This is a simple FastAPI project that generates music from a text prompt.
+##  Overview
+This project is a simple FastAPI-based API that generates music from a text prompt.
 
-## Features
-- Text-based music generation
-- Rule-based melody
-- WAV file output
+---
 
-## Installation
-pip install -r requirements.txt
+##  Tech Stack
+- FastAPI
+- Python
+- NumPy
+- SciPy
 
-## Run the Server
-uvicorn main:app --reload
+---
 
-## API Endpoint
+##  API Endpoint
 
-POST /generate-music
+### POST /generate-music
 
-Request:
+#### Input:
 {
   "prompt": "happy birthday tune"
 }
 
-Response:
+#### Output:
 {
   "result": "output.wav"
 }
 
-## Output
-Generated audio file (output.wav)
+---
+
+##  How to Run
+
+1. Install dependencies:
+pip install -r requirements.txt
+
+2. Run server:
+uvicorn main:app --reload
+
+3. Open browser:
+http://127.0.0.1:8000/docs
+
+---
+
+##  Output
+- Generates a .wav music file
+- Example: output.wav
+
+---
+
+##  Approach
+This project uses a rule-based melody generator that creates simple tones using Python.
+
+---
+
+##  Project Structure
+
+music_generator_api/
+│
+├── main.py
+├── music_generator.py
+├── output.wav
+├── requirements.txt
+├── README.md
