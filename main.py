@@ -4,7 +4,6 @@ from music_generator import generate_music
 
 app = FastAPI()
 
-# Home route (to avoid confusion)
 @app.get("/")
 def home():
     return {"message": "API is running"}
