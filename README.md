@@ -56,9 +56,8 @@ This project uses a rule-based melody generator that creates simple tones using 
 ##  Project Structure
 
 music_generator_api/
-│
-├── main.py
-├── music_generator.py
-├── output.wav
-├── requirements.txt
-├── README.md
+ main.py
+  music_generator.py
+   output.wav
+  requirements.txt
+  README.md
