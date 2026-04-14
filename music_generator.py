@@ -1,7 +1,7 @@
 import numpy as np
 from scipy.io.wavfile import write
 
-# Note frequencies
+
 NOTES = {
     "C": 261,
     "D": 294,
@@ -16,7 +16,7 @@ def generate_music(prompt: str, filename="output.wav"):
     sample_rate = 44100
     duration = 0.4
 
-    # Rule-based melody
+    
     if "happy" in prompt.lower():
         melody = ["C", "E", "G", "E", "C"]
     elif "birthday" in prompt.lower():
